@@ -1,0 +1,246 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Barlow Condensed", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #050505;
+    color: #F5F5F7;
+    font-family: var(--font-sans);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #050505;
+    color: #F5F5F7;
+  }
+
+  /* Custom subtle dark scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #050505;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #27272A;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #DC1E2E;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Portrait bottom integration fade */
+.portrait-fade-mask {
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 76%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 76%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Custom cursor active on fine pointer desktops */
+@media (pointer: fine) {
+  .has-custom-cursor,
+  .has-custom-cursor a,
+  .has-custom-cursor button {
+    cursor: none;
+  }
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee {
+  animation: marqueeScroll 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
+
+/* 4-Cursor Split & Live Typing Tour Styles */
+html.tour-playing {
+  overflow: hidden;
+}
+
+.tour-ia {
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+html.tour-playing .tour-ia:not(.tour-on) {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+html.tour-playing .tour-typeme:not(.tour-rd) {
+  opacity: 0;
+}
+
+.m {
+  display: inline-block;
+  width: 0;
+  height: 1em;
+}
+
+.h {
+  opacity: 0;
+}
+
+.tour-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 110;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.tour-cursor svg {
+  display: block;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.75));
+}
+
+.tour-chip {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--tc);
+  color: var(--ti);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  font: 600 10px/1.35 var(--font-mono);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+  transition: opacity 0.35s ease;
+}
+
+.tour-cursor.nolabel .tour-chip {
+  opacity: 0;
+}
+
+.tour-ripple {
+  position: fixed;
+  z-index: 109;
+  width: 14px;
+  height: 14px;
+  margin: -7px 0 0 -7px;
+  border-radius: 50%;
+  border: 1.5px solid #DC1E2E;
+  pointer-events: none;
+  animation: tourRipple 0.9s ease-out forwards;
+}
+
+@keyframes tourRipple {
+  to {
+    transform: scale(9);
+    opacity: 0;
+  }
+}
+
+/* Simulated cursor hover states during tour */
+a.tour-sim {
+  color: #ffffff !important;
+}
+
+a.tour-sim > span:last-child {
+  transform: scaleX(1) !important;
+}
+
+button.tour-sim,
+a.tour-cta.tour-sim {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(220, 30, 46, 0.35);
+}
+
+.tour-photo-sim.tour-sim {
+  transform: scale(1.035);
+  filter: drop-shadow(0 0 36px rgba(220, 30, 46, 0.32));
+}
+
+/* Futuristic Hero Orbital & Biometric Scan Animations */
+@keyframes orbitSpinCw {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbitSpinCcw {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes laserScanPass {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.85;
+  }
+  85% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateY(110%);
+    opacity: 0;
+  }
+}
+
+.animate-orbit-cw {
+  animation: orbitSpinCw 38s linear infinite;
+}
+
+.animate-orbit-ccw {
+  animation: orbitSpinCcw 26s linear infinite;
+}
+
+.animate-laser-scan {
+  animation: laserScanPass 4.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-orbit-cw,
+  .animate-orbit-ccw,
+  .animate-laser-scan {
+    animation: none;
+  }
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shanmukha Vaibhav Tatipaka – Portfolio</title>
+<script>if(!matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.classList.add("playing");setTimeout(function(){if(!window.__tour)document.documentElement.classList.remove("playing")},8000)}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAF6EE;--paper:#FFFDF8;--soft:#F1EADC;--ink:#2B2622;--muted:#7D7266;--line:#E8DFD0;--accent:#A3684A;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:76px;color-scheme:light}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.7;overflow-x:hidden}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.15;margin:0}
+.wrap{max-width:1020px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:rgba(250,246,238,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:8px 24px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px}
+.brand{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.3rem;font-weight:700;color:var(--ink);text-decoration:none}
+.links{display:flex;gap:6px 22px;flex-wrap:wrap}
+.links a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s}
+.links a:hover,.links a:focus-visible{color:var(--accent);outline:none}
+section{padding:92px 0}
+.label{color:var(--accent);text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;font-weight:600;margin-bottom:10px}
+h2{font-size:clamp(2rem,4.5vw,2.8rem);margin-bottom:34px}
+#home{padding:70px 0 90px}
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:center}
+h1{font-size:clamp(2.4rem,6vw,4rem);margin:8px 0 14px}
+.role{color:var(--accent);font-size:1.1rem;font-weight:500;margin:0 0 18px}
+.intro{color:var(--muted);max-width:56ch;margin:0}
+.intro strong{color:var(--ink);font-weight:500}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-block;padding:12px 24px;border-radius:999px;text-decoration:none;font-size:.92rem;font-weight:500;border:1px solid var(--ink);color:var(--ink);background:transparent;transition:.25s;cursor:pointer;font-family:inherit}
+.btn.p{background:var(--ink);color:var(--bg)}
+.btn:hover,.btn:focus-visible{transform:translateY(-2px);box-shadow:0 8px 20px rgba(43,38,34,.12);outline:none}
+.photo{width:min(320px,80%);aspect-ratio:4/5;margin:auto;border-radius:200px 200px 28px 28px;background:var(--soft);border:1px solid var(--line);box-shadow:14px 14px 0 var(--soft);overflow:hidden;display:grid;place-items:center;font:600 4rem "Cormorant Garamond",Georgia,serif;color:var(--accent)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:26px;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(43,38,34,.08)}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card h3{font-size:1.4rem;margin-bottom:10px}
+ul{margin:0;padding-left:18px;color:var(--muted)}
+li{margin:2px 0}
+p{margin:0 0 12px}
+.muted{color:var(--muted)}
+.motto{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.6rem;font-style:italic;color:var(--accent);margin-top:18px}
+.tag{display:inline-block;font-size:.75rem;color:var(--accent);background:var(--soft);border-radius:999px;padding:3px 12px;margin:4px 6px 0 0}
+.proj{display:flex;flex-direction:column;gap:10px}
+.proj .top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.num{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.5rem;color:var(--accent)}
+select.status{background:var(--soft);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:4px 12px;font:inherit;font-size:.78rem}
+.proj h3{margin:0}.proj .cat{font-size:.82rem;color:var(--accent);margin:0}.proj p{font-size:.94rem;color:var(--muted)}
+.note{font-size:.85rem;color:var(--muted);margin-top:18px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+form{display:grid;gap:12px}
+input,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+input:focus,textarea:focus{outline:2px solid var(--accent);border-color:transparent}
+.clinks p{margin:0 0 10px}.clinks a{color:var(--ink);text-decoration-color:var(--accent);text-underline-offset:4px;word-break:break-all}
+.clinks a:hover{color:var(--accent)}
+.final{text-align:center;background:var(--soft)}
+.final p{max-width:58ch;margin:0 auto;color:var(--muted)}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:36px 24px 56px}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .8s,transform .8s}.reveal.in{opacity:1;transform:none}
+body::before{content:"";position:fixed;inset:0;z-index:1;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.06'/%3E%3C/svg%3E")}
+#home{position:relative;overflow:hidden}
+#home::before{content:"";position:absolute;width:520px;height:520px;right:-120px;top:-100px;border-radius:50%;background:radial-gradient(circle,rgba(163,104,74,.17),transparent 70%);animation:drift 14s ease-in-out infinite alternate;pointer-events:none}
+#home::after{content:"";position:absolute;width:420px;height:420px;left:-140px;bottom:-160px;border-radius:50%;background:radial-gradient(circle,rgba(107,127,92,.15),transparent 70%);animation:drift 18s ease-in-out infinite alternate-reverse;pointer-events:none}
+@keyframes drift{to{transform:translate(40px,30px) scale(1.1)}}
+.hero{position:relative;z-index:1}
+.label::before{content:"";display:inline-block;width:28px;height:1px;background:var(--accent);vertical-align:middle;margin-right:12px}
+.links a{position:relative}.links a::after{content:"";position:absolute;left:0;bottom:-4px;height:1px;width:0;background:var(--accent);transition:width .3s}
+.links a:hover::after,.links a.sim::after{width:100%}.links a.sim{color:var(--accent)}
+.btn.sim{transform:translateY(-2px);box-shadow:0 8px 20px rgba(43,38,34,.12)}
+.photo{transition:transform .5s}.photo.sim{transform:scale(1.03)}
+.reveal.in .grid>.card{animation:up .8s backwards}
+.reveal.in .grid>.card:nth-child(2){animation-delay:.1s}.reveal.in .grid>.card:nth-child(3){animation-delay:.2s}.reveal.in .grid>.card:nth-child(4){animation-delay:.3s}
+@keyframes up{from{opacity:0;transform:translateY(18px)}}
+html.playing{overflow:hidden}
+.ia{transition:opacity .7s,transform .7s}
+html.playing .ia:not(.on){opacity:0;transform:translateY(12px)}
+html.playing .typeme:not(.rd){opacity:0}
+.m{display:inline-block;width:0;height:1em}.h{opacity:0}
+.cc{position:fixed;left:0;top:0;z-index:100;pointer-events:none;will-change:transform}
+.cc svg{display:block;filter:drop-shadow(0 2px 3px rgba(43,38,34,.28))}
+.chip{position:absolute;left:16px;top:20px;padding:3px 10px;border-radius:999px;background:var(--c);color:#FFFDF8;font:600 .7rem/1.4 Inter,system-ui,sans-serif;white-space:nowrap;transition:opacity .4s}
+.cc.nolabel .chip{opacity:0}
+.rip{position:fixed;z-index:99;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;border:1.5px solid var(--accent);pointer-events:none;animation:rip .9s ease-out forwards}
+@keyframes rip{to{transform:scale(8);opacity:0}}
+#ring{position:fixed;left:0;top:0;width:34px;height:34px;margin:-17px 0 0 -17px;border:1.5px solid var(--accent);border-radius:50%;pointer-events:none;z-index:99;opacity:0;transition:width .25s,height .25s,margin .25s,background .25s,opacity .4s}
+#ring.live{opacity:.85}#ring.big{width:58px;height:58px;margin:-29px 0 0 -29px;background:rgba(163,104,74,.12)}
+#skip{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);z-index:101;background:var(--paper);border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:6px 16px;font:500 .78rem Inter,system-ui,sans-serif;cursor:pointer}
+@media(max-width:760px){.hero,.two{grid-template-columns:1fr}.photo{order:-1;width:240px}section{padding:64px 0}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<button id="skip" type="button">Skip tour</button><div id="ring" aria-hidden="true"></div>
+<nav aria-label="Main"><div class="wrap"><a class="brand typeme" href="#home">S. V. Tatipaka</a>
+<div class="links ia"><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#resume">Resume</a><a href="#contact">Contact</a></div></div></nav>
+
+<header id="home"><div class="wrap hero">
+<div>
+<div class="label typeme">Hello, I’m</div>
+<h1 class="typeme">Shanmukha Vaibhav Tatipaka</h1>
+<p class="role typeme">Aspiring AI Engineer &amp; Software Developer</p>
+<p class="intro typeme"><strong>Building Tomorrow with Artificial Intelligence, One Line of Code at a Time.</strong><br><br>I’m a first-year Computer Science and Engineering student specializing in AI &amp; ML at NIAT × JOY UNIVERSITY. Driven by curiosity and creativity, I’m exploring programming, intelligent systems and web development, with a growing foundation in Python and C.</p>
+<div class="btns ia"><a class="btn p" href="#projects">Explore My Projects</a><a class="btn" download href="Shanmukha_Vaibhav_Tatipaka_Updated_CV.pdf">Download My Resume</a><a class="btn" href="#contact">Contact Me</a></div>
+</div>
+<div class="photo ia" id="face"><img src="profile.jpg" alt="Shanmukha Vaibhav Tatipaka" onerror="this.remove();document.getElementById('face').textContent='SV'"></div>
+</div></header>
+
+<section id="about"><div class="wrap reveal"><div class="label">About</div><h2>A little about me</h2>
+<div class="card"><p>I am an enthusiastic computer science student interested in artificial intelligence, software engineering and modern web technologies. I enjoy learning programming languages, exploring intelligent systems, solving logical challenges and experimenting with innovative ideas.</p>
+<p>My goal is to strengthen my technical foundation and become an AI Engineer and Software Developer capable of creating useful real-world solutions.</p>
+<div class="motto">“Learn. Experiment. Build. Innovate.”</div></div></div></section>
+
+<section id="skills" style="background:var(--soft)"><div class="wrap reveal"><div class="label">Skills</div><h2>What I work with</h2>
+<div class="grid">
+<div class="card"><h3>Programming</h3><ul><li>Python</li><li>C Programming</li></ul></div>
+<div class="card"><h3>Development</h3><ul><li>Web Development</li></ul></div>
+<div class="card"><h3>Specialization</h3><ul><li>Artificial Intelligence</li><li>Machine Learning</li></ul></div>
+<div class="card"><h3>Interests</h3><ul><li>Software Development</li><li>Emerging Technologies</li><li>Intelligent Systems</li></ul></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap reveal"><div class="label">Projects</div><h2>Featured work</h2>
+<div class="grid" id="projGrid"></div>
+<p class="note">Status labels are editable using the dropdown on each card. GitHub and live-demo buttons appear only when a real link is added to the PROJECTS list in the page source.</p></div></section>
+
+<section id="education" style="background:var(--soft)"><div class="wrap reveal"><div class="label">Education</div><h2>Where I’m learning</h2>
+<div class="card"><h3>NIAT × JOY UNIVERSITY</h3><p class="muted" style="margin-top:8px">Bachelor of Technology (B.Tech)<br>Computer Science and Engineering – Artificial Intelligence and Machine Learning</p><span class="tag">First-Year Undergraduate</span></div>
+<div class="two" style="align-items:start;margin-top:28px">
+<div class="card"><h3>Achievements</h3><p class="muted">Certifications, hackathons, workshops, awards and technical competitions will be added here as I earn them.</p></div>
+<div class="card"><h3>Hobbies &amp; Interests</h3><ul><li>Exploring AI and emerging technologies</li><li>Practising Python and C programming</li><li>Building creative web projects</li><li>Solving logical and technical challenges</li><li>Following technology trends and startups</li><li>Learning new tools and collaborating on ideas</li></ul></div>
+</div></div></section>
+
+<section id="resume"><div class="wrap reveal"><div class="label">Resume</div><h2>My résumé</h2>
+<div class="card two"><div><h3>Shanmukha_Vaibhav_Tatipaka_Updated_CV.pdf</h3><p class="muted" style="margin-top:8px">Official résumé (PDF). Download a copy or open it in a new tab.</p>
+<div class="btns"><a class="btn p" download href="Shanmukha_Vaibhav_Tatipaka_Updated_CV.pdf">Download PDF</a><a class="btn" target="_blank" rel="noopener" href="Shanmukha_Vaibhav_Tatipaka_Updated_CV.pdf">Open in New Tab</a></div></div>
+<object data="Shanmukha_Vaibhav_Tatipaka_Updated_CV.pdf#toolbar=0" type="application/pdf" width="100%" height="300" aria-label="Resume preview"><p class="muted">PDF preview unavailable here. Use the buttons to open or download.</p></object></div></div></section>
+
+<section id="contact" style="background:var(--soft)"><div class="wrap reveal"><div class="label">Contact</div><h2>Let’s talk</h2>
+<div class="card two"><div class="clinks"><p>Email: <a href="mailto:shanmukhtatipaka4@gmail.com">shanmukhtatipaka4@gmail.com</a></p><p>Phone: <a href="tel:+918712800376">8712800376</a></p><p>LinkedIn: <a href="https://linkedin.com/in/shanmukha-vaibhav-tatipaka-863b3a438" target="_blank" rel="noopener">shanmukha-vaibhav-tatipaka</a></p><p class="muted">Andhra Pradesh, India</p></div>
+<form id="cf"><input name="n" placeholder="Your name" aria-label="Your name" required><input name="e" type="email" placeholder="Your email" aria-label="Your email" required><textarea name="m" rows="4" placeholder="Your message" aria-label="Your message" required></textarea><button class="btn p" type="submit">Send via Email App</button></form></div></div></section>
+
+<section class="final"><div class="wrap reveal"><h2>Where Curiosity Meets Innovation.</h2>
+<p>My vision is to explore the possibilities of Artificial Intelligence and modern software development, build meaningful digital solutions, and contribute to the technologies shaping tomorrow.</p></div></section>
+
+<footer>© 2026 SHANMUKHA VAIBHAV TATIPAKA. All Rights Reserved.<br>Designed with Curiosity. Built with Passion. Driven by Innovation.</footer>
+
+<script>
+// ===== CONFIG: edit statuses and add real links here =====
+var STATUSES=["Concept","Prototype","In Development","Completed"];
+var PROJECTS=[
+{n:"01",t:"ISHARA",sub:"AI-Powered Sign Language-to-Text and Speech Communication Assistant",c:"Artificial Intelligence / Machine Learning",s:"Concept",d:"An accessibility-focused communication assistant concept to help people who are deaf or non-speaking communicate through sign language, text and speech.",f:["Sign recognition via smartphone camera","Sign-to-text and sign-to-speech","Speech-to-text communication","Offline functionality (design objective)","Hand landmark tracking with MediaPipe"],tech:["React","TypeScript","MediaPipe Hands","Computer Vision"],github:"",demo:""},
+{n:"02",t:"AGRI VISION AI",sub:"Farmer-focused crop disease identification",c:"Artificial Intelligence / Smart Agriculture",s:"Concept",d:"A farmer-focused agricultural technology concept exploring AI-assisted crop disease identification and useful digital support for farmers.",f:["Crop disease detection concept","Leaf image analysis","Farmer-friendly interface","Agricultural information","Research into natural farming practices"],tech:["AI","Image Recognition","AgriTech"],github:"",demo:""},
+{n:"03",t:"JOY UNIVERSITY WEBSITE",sub:"University website and student portal",c:"Web Development / Student Portal",s:"In Development",d:"A university website and student portal focused on an organized digital experience for university information and student services.",f:["Responsive university website (planned)","Student login and registration (planned)","Student and admin dashboards (planned)","Database integration (planned)","AI-powered features (planned)"],tech:["Frontend","Backend","Authentication","Databases"],github:"",demo:""},
+{n:"04",t:"GULFZONE WEBSITE REDESIGN",sub:"Modern, premium, responsive redesign",c:"Full-Stack Web Development / UI UX Design",s:"In Development",d:"A website redesign project creating a modern, premium, responsive digital presence for GULFZONE.",f:["Complete website redesign","Premium visual identity","Responsive layouts","Backend system development","Local testing and future deployment"],tech:["UI/UX","Frontend","Backend"],github:"",demo:""}];
+
+var g=document.getElementById("projGrid");
+PROJECTS.forEach(function(p){
+var el=document.createElement("article");el.className="card proj";
+var opts=STATUSES.map(function(s){return '<option'+(s===p.s?' selected':'')+'>'+s+'</option>'}).join("");
+var links=(p.github?'<a class="btn" target="_blank" rel="noopener" href="'+p.github+'">GitHub</a>':'')+(p.demo?'<a class="btn p" target="_blank" rel="noopener" href="'+p.demo+'">Live Demo</a>':'');
+el.innerHTML='<div class="top"><span class="num">'+p.n+'</span><select class="status" aria-label="Project status for '+p.t+'">'+opts+'</select></div><h3>'+p.t+'</h3><p class="cat">'+p.c+'</p><p><em>'+p.sub+'</em></p><p>'+p.d+'</p><ul>'+p.f.map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul><div>'+p.tech.map(function(x){return '<span class="tag">'+x+'</span>'}).join("")+'</div>'+(links?'<div class="btns">'+links+'</div>':'');
+g.appendChild(el)});
+
+document.getElementById("cf").addEventListener("submit",function(e){e.preventDefault();var f=e.target;
+location.href="mailto:shanmukhtatipaka4@gmail.com?subject="+encodeURIComponent("Portfolio message from "+f.n.value)+"&body="+encodeURIComponent(f.m.value+"\n\n– "+f.n.value+" ("+f.e.value+")")});
+
+(function(){
+var root=document.documentElement;if(!root.classList.contains("playing"))return;
+window.__tour=1;var done=false,fin=false,items=[],cs=[],px=null,py=null,ringOn=false;
+addEventListener("pointermove",function(e){px=e.clientX;py=e.clientY},{passive:true});
+var wait=function(ms){return new Promise(function(r){setTimeout(r,ms)})},q=function(s){return document.querySelector(s)};
+function wrap(el){if(el._its)return el._its;var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),ns=[],n,out=[];
+while(n=w.nextNode())if(n.nodeValue.trim())ns.push(n);
+ns.forEach(function(t){var s=document.createElement("span");s.innerHTML='<span class="t"></span><span class="m"></span><span class="h"></span>';s.lastChild.textContent=t.nodeValue;var it={t:s.children[0],m:s.children[1],h:s.children[2],a:Array.from(t.nodeValue)};t.replaceWith(s);out.push(it);items.push(it)});
+el.classList.add("rd");el._its=out;return out}
+function mk(l,c){var d=document.createElement("div");d.className="cc nolabel";d.style.setProperty("--c",c);d.innerHTML='<svg width="22" height="26" viewBox="0 0 22 26"><path style="fill:var(--c)" d="M2 2v18l5-4.5 3.5 7.5 3-1.4-3.3-7.4H17z" stroke="#FFFDF8" stroke-width="1.5" stroke-linejoin="round"/></svg><span class="chip">'+l+'</span>';document.body.appendChild(d);cs.push(d);return d}
+function put(c,x,y,ms,ease){c.style.transition="transform "+ms+"ms "+(ease||"cubic-bezier(.65,0,.35,1)");c.style.transform="translate3d("+(x-2)+"px,"+(y-2)+"px,0)";return wait(ms)}
+function rip(x,y){var r=document.createElement("div");r.className="rip";r.style.left=x+"px";r.style.top=y+"px";document.body.appendChild(r);setTimeout(function(){r.remove()},1000)}
+function pos(it){var r=it.m.getBoundingClientRect();return[r.left,r.top+r.height*.8]}
+async function typeEl(c,el,sp){var its=wrap(el);if(!its.length||done)return;var p=pos(its[0]);var fl=c._m?380:750;c._m=1;await put(c,p[0],p[1]+4,fl);
+for(var k=0;k<its.length&&!done;k++){var it=its[k],step=sp||Math.max(1,Math.ceil(it.a.length/60));
+for(var i=0;i<=it.a.length&&!done;i+=step){it.t.textContent=it.a.slice(0,i).join("");it.h.textContent=it.a.slice(i).join("");var s=pos(it);put(c,s[0],s[1],70,"linear");await wait(28)}
+it.t.textContent=it.a.join("");it.h.textContent=""}}
+async function tour(c,els,hold){for(var i=0;i<els.length&&!done;i++){var r=els[i].getBoundingClientRect();await put(c,r.left+r.width*.5,r.top+r.height*.55,650);els[i].classList.add("sim");await wait(hold);els[i].classList.remove("sim")}}
+function startRing(x,y){if(ringOn||!matchMedia("(hover:hover)").matches)return;ringOn=true;var r=document.getElementById("ring"),rx=x,ry=y,tx=x,ty=y;r.classList.add("live");
+addEventListener("pointermove",function(e){tx=e.clientX;ty=e.clientY},{passive:true});
+document.addEventListener("pointerover",function(e){r.classList.toggle("big",!!(e.target.closest&&e.target.closest("a,button,select,input,textarea")))});
+(function f(){rx+=(tx-rx)*.18;ry+=(ty-ry)*.18;r.style.transform="translate("+rx+"px,"+ry+"px)";requestAnimationFrame(f)})()}
+function finish(){if(fin)return;fin=true;done=true;
+items.forEach(function(it){it.t.textContent=it.a.join("");it.h.textContent=""});
+document.querySelectorAll(".typeme").forEach(function(e){e.classList.add("rd")});
+document.querySelectorAll(".ia").forEach(function(e){e.classList.add("on");e.classList.remove("sim")});
+document.querySelectorAll(".sim").forEach(function(e){e.classList.remove("sim")});
+cs.forEach(function(c){c.remove()});var s=document.getElementById("skip");if(s)s.remove();root.classList.remove("playing")}
+document.getElementById("skip").addEventListener("click",function(){finish();startRing(px==null?innerWidth/2:px,py==null?innerHeight/2:py)});
+var TSEL="h2,h3,p,li,.label,.tag,.motto,.btn,.num,.cat,button,footer";
+function typeables(root){var list=root.matches(TSEL)?[root]:[].slice.call(root.querySelectorAll(TSEL)),out=[];
+list.forEach(function(e){if(!out.some(function(o){return o.contains(e)})&&e.textContent.trim()&&!e.closest("select"))out.push(e)});return out}
+async function scene(p){p.rs.forEach(function(r){var a=r.closest(".reveal");if(a)a.classList.add("in");r.querySelectorAll(".reveal").forEach(function(x){x.classList.add("in")})});
+(p.s||p.rs[0]).scrollIntoView({behavior:"smooth",block:p.b||"start"});await wait(950);if(done)return;
+var ln=[[],[],[],[]];p.els.forEach(function(e,i){ln[i%4].push(e)});
+await Promise.all(ln.map(function(l,i){var t=l.reduce(function(a,e){return a+e.textContent.length},0),sp=Math.max(1,Math.ceil(t/55));return(async function(){for(var k=0;k<l.length&&!done;k++)await typeEl(cs[i],l[k],sp)})()}))}
+var SC=[{r:["#about"]},{r:["#skills"]},{r:["#projects .label","#projects h2","#projGrid>:nth-child(1)"]},{r:["#projGrid>:nth-child(2)"],s:"#projGrid>:nth-child(2)",b:"center"},{r:["#projGrid>:nth-child(3)"],s:"#projGrid>:nth-child(3)",b:"center"},{r:["#projGrid>:nth-child(4)"],s:"#projGrid>:nth-child(4)",b:"center"},{r:["#education"]},{r:["#resume"]},{r:["#contact"]},{r:[".final","footer"],s:"footer",b:"end"}];
+async function main(){
+var ox=innerWidth/2,oy=innerHeight*.45;
+var L=mk("Learn","#A3684A"),E=mk("Experiment","#6B7F5C"),B=mk("Build","#A8812F"),I=mk("Innovate","#B0726C");
+cs.forEach(function(c,i){c.style.transition="none";c.style.transform="translate3d("+(ox-2)+"px,"+(oy-2)+"px,0)";c.style.zIndex=100+i});
+rip(ox,oy);await wait(800);if(done)return;
+cs.forEach(function(c){c.classList.remove("nolabel")});rip(ox,oy);
+await Promise.all([
+(async function(){await typeEl(L,q(".brand"));await typeEl(L,q(".label"));await typeEl(L,q("h1"))})(),
+(async function(){await typeEl(E,q(".role"));await typeEl(E,q(".intro"))})(),
+(async function(){var lk=q(".links"),r=lk.getBoundingClientRect();await put(B,r.left,r.top+r.height/2,900);lk.classList.add("on");await wait(300);await tour(B,[].slice.call(document.querySelectorAll(".links a")),330)})(),
+(async function(){var ph=q(".photo"),r=ph.getBoundingClientRect();await put(I,r.left+r.width*.5,r.top+r.height*.4,1000);ph.classList.add("on");await wait(500);ph.classList.add("sim");await wait(800);ph.classList.remove("sim");q(".btns").classList.add("on");await wait(500);await tour(I,[].slice.call(document.querySelectorAll(".btns .btn")),450)})()]);
+if(done)return;await wait(400);
+var plan=SC.map(function(x){var rs=x.r.map(function(y){return q(y)}).filter(Boolean),els=[];rs.forEach(function(r){typeables(r).forEach(function(e){els.push(e)})});return{rs:rs,els:els,s:x.s&&q(x.s),b:x.b}});
+plan.forEach(function(p){p.els.forEach(function(e){wrap(e)})});
+for(var si=0;si<plan.length&&!done;si++)await scene(plan[si]);
+if(done)return;await wait(500);
+var tx=px==null?innerWidth/2:px,ty=py==null?innerHeight/2:py;
+cs.forEach(function(c){c.classList.add("nolabel")});
+await Promise.all(cs.map(function(c,i){return put(c,tx,ty,1000+i*90)}));
+rip(tx,ty);cs.forEach(function(c){c.style.transition="opacity .4s";c.style.opacity=0});
+startRing(tx,ty);scrollTo({top:0,behavior:"smooth"});await wait(1300);finish()}
+setTimeout(finish,150000);
+Promise.race([document.fonts?document.fonts.ready:wait(0),wait(1200)]).then(main).catch(finish);
+})();
+
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting)x.target.classList.add("in")})},{threshold:.1});
+document.querySelectorAll(".reveal").forEach(function(x){io.observe(x)});
+</script>
+</body>
+</html>
